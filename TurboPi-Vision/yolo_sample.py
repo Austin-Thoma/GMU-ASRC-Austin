@@ -4,12 +4,12 @@ import numpy as np
 import time
 
 # Load the image
-img = cv.imread('images/robopov.jpg')
+img = cv.imread('TurboPi-Vision/images/robopov.jpg')
 cv.imshow('window', img)
 cv.waitKey(1)
 
 # Load names of classes and get random colors
-classes = open('coco.names').read().strip().split('\n')
+classes = open('TurboPi-Vision/coco.names').read().strip().split('\n')
 np.random.seed(42)
 colors = np.random.randint(0, 255, size=(len(classes), 3), dtype='uint8')
 
